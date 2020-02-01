@@ -25,7 +25,7 @@ public class LoadData {
 
         JsonParser parser = new JsonFactory().createParser(new File("/Users/ravimamidipalli/eclipse-workspace/load-json-to-dynamo/data/moviedata.json"));
 
-        JsonNode rootNode = new ObjectMapper().readTree(parser);;
+        JsonNode rootNode = new ObjectMapper().readTree(parser);
         Iterator<JsonNode> iter = rootNode.iterator();
 
         ObjectNode currentNode;
